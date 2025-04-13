@@ -68,7 +68,7 @@ const AcInstallationPage = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6">Expert AC Installation</h2>
           <p className="text-gray-700 text-lg">
-            Whether it's a brand-new unit or relocating an existing one, we handle the setup, mounting, insulation, electricals, and complete testing to ensure optimal performance.
+            Whether it s a brand-new unit or relocating an existing one  we handle the setup  mounting  insulation electricals  and complete testing to ensure optimal performance.
           </p>
         </motion.div>
         <motion.img

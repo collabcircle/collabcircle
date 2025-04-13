@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelopeOpenText } from 'react-icons/fa';
-
+import Image from 'next/image';
 const ContactUs = () => {
   const [loading, setLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false); // Track if the email was sent successfully
@@ -112,7 +112,7 @@ const ContactUs = () => {
             paddingBottom: '20px',
           }}
         >
-          <img
+          <Image
             src="https://www.reshot.com/preview-assets/illustrations/2NUWCM95LV/digital-communication-2NUWCM95LV-w1600.jpg"
             alt="Cartoon Image"
             style={{
