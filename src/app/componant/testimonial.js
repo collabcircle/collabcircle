@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import { FaPlay, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -79,7 +80,7 @@ const Testimonial = () => {
               className="bg-white rounded-2xl shadow-xl overflow-hidden relative transition-transform"
             >
               <div className="relative pb-[56.25%]">
-                <img
+                <Image
                   src={testimonial.thumbnail}
                   alt={testimonial.name}
                   className="absolute w-full h-full object-cover top-0 left-0"

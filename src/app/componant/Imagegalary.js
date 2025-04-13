@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const images = [
   { src: "https://tuk-cdn.s3.amazonaws.com/can-uploader/gl.png", label: "Glasses" },
@@ -26,7 +27,7 @@ function ImageGallery() {
               key={index}
               className="break-inside-avoid overflow-hidden rounded-xl shadow-lg hover:scale-[1.02] transition duration-300 ease-in-out"
             >
-              <img
+              <Image
                 src={item.src}
                 alt={item.label}
                 className="w-full h-auto object-cover"

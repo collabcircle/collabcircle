@@ -5,6 +5,7 @@ import Footer from "../../componant/footer";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
+import Image from 'next/image';
 
 // Replace icons with image URLs in the services section
 const otherServices = [
@@ -121,7 +122,7 @@ const Index = () => {
           Our expert technicians solve a variety of AC problems, including cooling issues, gas leaks, and unusual noises. We use advanced tools and genuine parts to ensure reliable, long-lasting repairs. Your AC’s performance and comfort are restored with precision, speed, and complete care.         </p>
         </div>
         <div className="w-full md:w-1/2">
-          <img src="/repair-image.png" alt="Repair AC" className="rounded-xl shadow-xl" />
+          <Image src="/repair-image.png" alt="Repair AC" className="rounded-xl shadow-xl" />
         </div>
       </section>
 
@@ -136,7 +137,7 @@ const Index = () => {
               key={index}
               className="bg-gradient-to-t from-blue-50 to-blue-100 p-6 rounded-2xl shadow-md text-center space-y-4 transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out"
             >
-              <img src={service.image} alt={service.title} className="mx-auto w-24 h-24 object-contain" />
+              <Image src={service.image} alt={service.title} className="mx-auto w-24 h-24 object-contain" />
               <h3 className="text-xl font-semibold text-blue-700">{service.title}</h3>
               <p className="text-gray-600 text-smc text-gray-800">{service.description}</p>
             </div>

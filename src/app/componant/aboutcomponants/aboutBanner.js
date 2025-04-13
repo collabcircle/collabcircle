@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-
+import  Image from 'next/image';
 const AboutBanner = () => {
   return (
     <section className="min-h-screen w-full bg-gradient-to-r from-white via-blue-100 to-blue-200 relative overflow-hidden p-4">
@@ -27,7 +27,7 @@ const AboutBanner = () => {
 
       {/* Background Image with Description */}
       <div className="mt-10 relative h-[50vh] md:h-[80vh] w-full">
-        <img
+        <Image
           src="/images/about-bg.jpg"
           alt="About Background"
           className="w-full h-full object-cover rounded-xl shadow-xl"
@@ -76,7 +76,7 @@ const AboutBanner = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <img
+          <Image
             src="/images/about-side.png"
             alt="Team Working"
             className="w-full h-auto rounded-xl shadow-2xl"

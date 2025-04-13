@@ -6,6 +6,7 @@ import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { useState } from "react";
 import Header from '../../componant/header';
 import Footer from "../../componant/footer";
+import Image from "next/image";
 
 const AcInstallationPage = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -113,7 +114,7 @@ const AcInstallationPage = () => {
               transition={{ delay: index * 0.2 }}
               className="bg-gradient-to-br from-blue-100 via-white to-blue-50 rounded-2xl p-6 shadow-xl hover:scale-105 duration-300"
             >
-              <img src={item.img} alt={item.title} className="w-full h-48 object-cover rounded-lg mb-4" />
+              <Image src={item.img} alt={item.title} className="w-full h-48 object-cover rounded-lg mb-4" />
               <h3 className="text-2xl font-semibold text-blue-700 mb-2">{item.title}</h3>
               <p className="text-gray-600">{item.desc}</p>
             </motion.div>

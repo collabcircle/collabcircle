@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { FaCertificate, FaStar, FaThumbsUp, FaUsers, FaCog, FaSnowflake } from "react-icons/fa"; // Adding new icon for AC-related service
-
+import Image from "next/image";
 const services = [
   {
     title: "Cool Your World with Professional AC Installation",
@@ -33,7 +33,7 @@ export default function DynamicSections() {
       <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto mb-20">
         {/* Left Image */}
         <div className="w-full md:w-1/2 mb-6 md:mb-0">
-          <img
+          <Image
             src={services[0].imgSrc}
             alt="AC Installation"
             className="w-full h-auto object-cover rounded-lg"
@@ -99,7 +99,7 @@ export default function DynamicSections() {
 
         {/* Right Image */}
         <div className="w-full md:w-1/2">
-          <img
+          <Image
             src={services[1].imgSrc}
             alt="AC Maintenance"
             className="w-full h-auto object-cover rounded-lg"
