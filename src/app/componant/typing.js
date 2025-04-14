@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FaSnowflake, FaFan, FaThermometerHalf } from 'react-icons/fa';
-import { TypingText } from './typingText';
+import TypingText from './TypingText';
 import * as THREE from 'three';
 import { IciclesCanvas } from './IciclesCanvas';
 import { gsap } from 'gsap/gsap-core';
