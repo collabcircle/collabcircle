@@ -98,7 +98,8 @@ export default function Header() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            {['Home', 'About' ,'contact'].map((item) => {
+            
+            { /* this is for desktop */['Home', 'About' ,'contact'].map((item) => {
               const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
               return (
                 <Link
@@ -159,7 +160,7 @@ export default function Header() {
             className="md:hidden pt-4 pb-2"
           >
             <div className="flex flex-col space-y-3">
-            {['Home', 'About'].map((item) => {
+            {['Home', 'About' ,'contact'].map((item) => {
               const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
               return (
                 <Link
