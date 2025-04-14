@@ -98,7 +98,7 @@ export default function Header() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            {['Home', 'About'].map((item) => {
+            {['Home', 'About' ,'contact'].map((item) => {
               const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
               return (
                 <Link
