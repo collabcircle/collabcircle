@@ -6,18 +6,19 @@ import { FaPlay, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
+import one from '../images/one.jpeg'; // Replace with actual image URL
 
 const testimonials = [
   {
     name: 'John Doe',
     videoUrl: '/videos/video1.mp4',
-    thumbnail: 'https://t3.ftcdn.net/jpg/10/67/95/60/360_F_1067956098_yJtqFsnnwtrLUm229iK4igJppKBF85qk.jpg',
+    thumbnail: one,
     description: 'Superb service! Cooling like never before. Highly recommended!',
   },
   {
     name: 'Jane Smith',
     videoUrl: '/videos/video2.mp4',
-    thumbnail: 'https://via.placeholder.com/300x200',
+    thumbnail:one,
     description: 'Fast AC installation, excellent customer support, and great value!',
   },
 ];
@@ -83,6 +84,8 @@ const Testimonial = () => {
                 <Image
                   src={testimonial.thumbnail}
                   alt={testimonial.name}
+                  width={500}
+                  height={500}
                   className="absolute w-full h-full object-cover top-0 left-0"
                 />
                 <div

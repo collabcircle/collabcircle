@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelopeOpenText } from 'react-icons/fa';
 import Image from 'next/image';
+import one from '../../images/one.jpeg' // Replace with actual image URL
 const ContactUs = () => {
   const [loading, setLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false); // Track if the email was sent successfully
@@ -113,8 +114,10 @@ const ContactUs = () => {
           }}
         >
           <Image
-            src="https://www.reshot.com/preview-assets/illustrations/2NUWCM95LV/digital-communication-2NUWCM95LV-w1600.jpg"
+            src={one}
             alt="Cartoon Image"
+            width={500}
+            height={500}
             style={{
               width: '80%',
               height: 'auto',

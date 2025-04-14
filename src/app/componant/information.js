@@ -2,18 +2,19 @@
 import { motion } from "framer-motion";
 import { FaCertificate, FaStar, FaThumbsUp, FaUsers, FaCog, FaSnowflake } from "react-icons/fa"; // Adding new icon for AC-related service
 import Image from "next/image";
+import one from '../images/one.jpeg'
 const services = [
   {
     title: "Cool Your World with Professional AC Installation",
     description:
       "Our team ensures that your air conditioning system is tailored to your needs, providing comfort and efficiency all year round.",
-    imgSrc: "https://via.placeholder.com/600x400?text=AC+Installation", // Replace with actual image URL
+    imgSrc: one, // Replace with actual image URL
   },
   {
     title: "Why Choose Us for Your Air Conditioning Needs?",
     description:
       "We offer not just installation but energy-efficient solutions that ensure your space remains cool and cost-effective throughout the year.",
-    imgSrc: "https://via.placeholder.com/600x400?text=AC+Maintenance", // Replace with actual image URL
+    imgSrc:one, // Replace with actual image URL
   },
 ];
 
@@ -36,6 +37,8 @@ export default function DynamicSections() {
           <Image
             src={services[0].imgSrc}
             alt="AC Installation"
+            width={500}
+            height={500}
             className="w-full h-auto object-cover rounded-lg"
           />
         </div>
@@ -102,6 +105,8 @@ export default function DynamicSections() {
           <Image
             src={services[1].imgSrc}
             alt="AC Maintenance"
+            width={500}
+            height={500}
             className="w-full h-auto object-cover rounded-lg"
           />
         </div>

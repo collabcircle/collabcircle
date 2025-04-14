@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-
+import one from '.././images/one.jpeg'
 const images = [
-  { src: "https://tuk-cdn.s3.amazonaws.com/can-uploader/gl.png", label: "Glasses" },
-  { src: "https://tuk-cdn.s3.amazonaws.com/can-uploader/gl_best.png", label: "Men" },
-  { src: "https://tuk-cdn.s3.amazonaws.com/can-uploader/shh_bestt.png", label: "Winter collection" },
-  { src: "https://tuk-cdn.s3.amazonaws.com/can-uploader/gb_best.png", label: "Shoe" },
-  { src: "https://tuk-cdn.s3.amazonaws.com/can-uploader/pr_bestt.png", label: "Perfumes" },
-  { src: "https://tuk-cdn.s3.amazonaws.com/can-uploader/f_best.png", label: "Women" },
+  { src: one, label: "Glasses" },
+  { src: one, label: "Men" },
+  { src: one, label: "Winter collection" },
+  { src: one, label: "Shoe" },
+  { src: one, label: "Perfumes" },
+  { src: one, label: "Women" },
 ];
 
 function ImageGallery() {
@@ -30,6 +30,8 @@ function ImageGallery() {
               <Image
                 src={item.src}
                 alt={item.label}
+                width={500}
+                height={500}
                 className="w-full h-auto object-cover"
               />
               <p className="text-base font-medium text-center text-white bg-gradient-to-r from-black/40 to-black/20 py-2">
