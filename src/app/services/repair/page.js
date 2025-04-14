@@ -5,41 +5,42 @@ import Footer from "../../componant/footer";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import Image from 'next/image';
+import one from '../../images/one.jpeg'; // Replace with actual image URL
 // Replace icons with image URLs in the services section
 const repairServices = [
   {
     title: "AC Power Issue Repair",
-    image: "/power-issue-image.png", // Replace with actual image
+    image: one, // Replace with actual image
     description: "Expert repair for sudden AC power failures, non-starting units, or inconsistent performance issues.",
     includes: ["Power circuit inspection", "Fuse replacement", "Thermal overload check"]
   },
   {
     title: "AC Noise Issue Repair",
-    image: "/noise-issue-image.png", // Replace with actual image
+    image: one, // Replace with actual image
     description: "We resolve rattling, buzzing, or humming sounds to restore peaceful AC operation without disturbance.",
     includes: ["Fan and motor inspection", "Loose part tightening", "Vibration reduction"]
   },
   {
     title: "Gas Leakage Repair & Refilling",
-    image: "/gas-leakage-image.png", // Replace with actual image
+    image: one, // Replace with actual image
     description: "Fix and refill AC refrigerant with utmost safety and precision to ensure efficient cooling.",
     includes: ["Leakage detection", "Safe refrigerant refilling", "Compressor check"]
   },
   {
     title: "AC Water Leakage Repair",
-    image: "/water-leakage-image.png", // Replace with actual image
+    image: one, // Replace with actual image
     description: "Complete drainage system check and repair to stop indoor unit water leakage issues effectively.",
     includes: ["Drain pipe cleaning", "Clog removal", "Insulation inspection"]
   },
   {
     title: "AC Parts Repair",
-    image: "/parts-repair-image.png", // Replace with actual image
+    image: one, // Replace with actual image
     description: "Repair or replace faulty components like capacitors, fans, compressors, and sensors with genuine parts.",
     includes: ["Component diagnosis", "Part replacement", "Functionality testing"]
   },
   {
     title: "Cleaning & Replacing Parts",
-    image: "/cleaning-parts-image.png", // Replace with actual image
+    image: one, // Replace with actual image
     description: "Deep cleaning of filters and components for improved efficiency, air quality, and unit lifespan.",
     includes: ["Filter cleaning", "Fan blade washing", "Dust removal"]
   }
@@ -104,7 +105,7 @@ const Repair = () => {
           </p>
         </div>
         <div className="w-full md:w-1/2">
-          <Image src="/repair-image.png" alt="Repair AC" className="rounded-xl shadow-xl" />
+          <Image src={one} height={500} width={500} alt="Repair AC" className="rounded-xl shadow-xl" />
         </div>
       </section>
 
@@ -119,7 +120,7 @@ const Repair = () => {
               key={index}
               className="bg-gradient-to-t from-blue-50 to-blue-100 p-6 rounded-2xl shadow-md text-center space-y-4 transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out"
             >
-              <Image src={service.image} alt={service.title} className="mx-auto w-24 h-24 object-contain" />
+              <Image src={service.image} width={500} height={500} alt={service.title} className="mx-auto w-24 h-24 object-contain" />
               <h3 className="text-xl font-semibold text-blue-700">{service.title}</h3>
               <p className="text-gray-600 text-smc text-gray-800">{service.description}</p>
             </div>

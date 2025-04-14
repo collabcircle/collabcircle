@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
 import Image from "next/image";
-
+import one from '../../images/one.jpeg'
 const About2 = () => {
   useEffect(() => {
     const animatedItems = document.querySelectorAll(".animate-on-scroll");
@@ -58,9 +58,9 @@ const About2 = () => {
         </div>
 
         <div className="lg:mt-14 sm:mt-10 mt-12 animate-on-scroll">
-          <Image className="lg:block hidden w-full" src="https://i.ibb.co/GvwJnvn/Group-736.png" alt="Team working" />
-          <Image className="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/5sZTmHq/Rectangle-116.png" alt="Team working" />
-          <Image className="sm:hidden block w-full" src="https://i.ibb.co/zSxXJGQ/Rectangle-122.png" alt="Team working" />
+          <Image width={500} height={500} className="lg:block hidden w-full" src={one} alt="Team working" />
+          <Image width={500} height={500} className="lg:hidden sm:block hidden w-full" src={one} alt="Team working" />
+          <Image width={500} height={500} className="sm:hidden block w-full" src={one} alt="Team working" />
         </div>
 
         <div className="lg:mt-16 sm:mt-12 mt-16 flex lg:flex-row justify-between flex-col lg:gap-8 gap-12">
@@ -79,9 +79,9 @@ const About2 = () => {
           </div>
 
           <div className="lg:flex items-center w-full lg:w-1/2 animate-on-scroll from-right">
-            <Image className="lg:block hidden w-full" src="https://i.ibb.co/2kxWpNm/Group-740.png" alt="AC team" />
-            <Image className="lg:hidden sm:block hidden w-full h-3/4" src="https://i.ibb.co/ZLgK3NQ/Group-788.png" alt="AC team" />
-            <Image className="sm:hidden block w-full" src="https://i.ibb.co/9g2R7Xr/Group-803.png" alt="AC team" />
+            <Image width={500} height={500} className="lg:block hidden w-full" src={one} alt="AC team" />
+            <Image width={500} height={500} className="lg:hidden sm:block hidden w-full h-3/4" src={one} alt="AC team" />
+            <Image width={500} height={500} className="sm:hidden block w-full" src={one} alt="AC team" />
           </div>
         </div>
       </div>

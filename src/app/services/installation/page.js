@@ -7,6 +7,7 @@ import { useState } from "react";
 import Header from '../../componant/header';
 import Footer from "../../componant/footer";
 import Image from "next/image";
+import one from '../../images/one.jpeg'; // Replace with actual image URL
 
 const AcInstallationPage = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -89,22 +90,22 @@ const AcInstallationPage = () => {
             { 
               title: "Window AC Installation", 
               desc: "Wall mount, insulation, electrical setup & performance testing.", 
-              img: "https://i.ibb.co/DVtBRH1/window-ac.jpg"
+              img: one
             },
             { 
               title: "Split AC Installation", 
               desc: "Indoor/outdoor setup, copper piping, and complete system connection.", 
-              img: "https://i.ibb.co/Jv8Rxj8/split-ac.jpg"
+              img: one
             },
             { 
               title: "Window AC Uninstallation", 
               desc: "Safe removal, power disconnect, and hardware disassembly.", 
-              img: "https://i.ibb.co/nrGYP5Z/window-uninstall.jpg"
+              img: one
             },
             { 
               title: "Split AC Uninstallation", 
               desc: "Professional disconnection & equipment safety handling.", 
-              img: "https://i.ibb.co/Rc37Lg0/split-uninstall.jpg"
+              img: one
             },
           ].map((item, index) => (
             <motion.div
@@ -114,7 +115,7 @@ const AcInstallationPage = () => {
               transition={{ delay: index * 0.2 }}
               className="bg-gradient-to-br from-blue-100 via-white to-blue-50 rounded-2xl p-6 shadow-xl hover:scale-105 duration-300"
             >
-              <Image src={item.img} alt={item.title} className="w-full h-48 object-cover rounded-lg mb-4" />
+              <Image src={item.img} alt={item.title} width={500} height={500} className="w-full h-48 object-cover rounded-lg mb-4" />
               <h3 className="text-2xl font-semibold text-blue-700 mb-2">{item.title}</h3>
               <p className="text-gray-600">{item.desc}</p>
             </motion.div>

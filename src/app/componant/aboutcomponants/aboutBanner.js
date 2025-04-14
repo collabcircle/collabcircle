@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import  Image from 'next/image';
+import one from '../../images/one.jpeg'; // Replace with actual image URL
 const AboutBanner = () => {
   return (
     <section className="min-h-screen w-full bg-gradient-to-r from-white via-blue-100 to-blue-200 relative overflow-hidden p-4">
@@ -28,8 +29,10 @@ const AboutBanner = () => {
       {/* Background Image with Description */}
       <div className="mt-10 relative h-[50vh] md:h-[80vh] w-full">
         <Image
-          src="/images/about-bg.jpg"
+          src={one}
           alt="About Background"
+          width={500}
+          height={500}
           className="w-full h-full object-cover rounded-xl shadow-xl"
         />
         <div className="absolute inset-0 bg-black/40 flex justify-center items-center px-4 md:px-20 text-white text-center">
@@ -77,8 +80,10 @@ const AboutBanner = () => {
           transition={{ duration: 1 }}
         >
           <Image
-            src="/images/about-side.png"
+            src={one}
             alt="Team Working"
+            width={500}
+            height={500}
             className="w-full h-auto rounded-xl shadow-2xl"
           />
         </motion.div>
