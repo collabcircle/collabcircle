@@ -2,7 +2,10 @@
 import { motion } from "framer-motion";
 import { FaCertificate, FaStar, FaThumbsUp, FaUsers, FaCog, FaSnowflake } from "react-icons/fa"; // Adding new icon for AC-related service
 import Image from "next/image";
-import one from '../images/one.jpeg'
+
+import one from '../images/professional/dealing.jpg'
+import two from '../images/professional/dealingtwo.jpg'
+
 const services = [
   {
     title: "Cool Your World with Professional AC Installation",
@@ -14,7 +17,7 @@ const services = [
     title: "Why Choose Us for Your Air Conditioning Needs?",
     description:
       "We offer not just installation but energy-efficient solutions that ensure your space remains cool and cost-effective throughout the year.",
-    imgSrc:one, // Replace with actual image URL
+    imgSrc:two, // Replace with actual image URL
   },
 ];
 

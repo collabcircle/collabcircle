@@ -52,13 +52,13 @@ export default function Footer() {
               <h3 className="text-2xl font-bold tracking-wide">CollabCircle</h3>
             </div>
             <p className="text-sky-100 mb-5 leading-relaxed">
-              Providing premium air conditioning & refrigeration services since 1995. Experience the cool difference.
+              Providing premium air conditioning & refrigeration services and Maintanance. Experience the cool difference.
             </p>
             <div className="flex gap-4">
               {[
-                { Icon: Instagram, href: "https://instagram.com/your_username" },
-                { Icon: Facebook, href: "https://facebook.com/your.profile.id" },
-                { Icon: FaWhatsapp, href: "https://wa.me/919876543210" },
+                { Icon: Instagram, href: "https://instagram.com/" },
+                { Icon: Facebook, href: "https://facebook.com/" },
+                { Icon: FaWhatsapp, href: "https://wa.me/8505924254" },
               ].map(({ Icon, href }, i) => (
                 <a key={i} href={href} target="_blank" className="hover:text-blue-300 transition-all">
                   <Icon className="h-5 w-5" />
@@ -134,15 +134,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-sky-100">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-sky-300" />
-                123 Cooling Street, Comfort City, CA 90210
+                373, Duble Story , Welcome Seelampur Phase-3, Delhi-110053
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-sky-300" />
-                <a href="tel:+18001234567" className="hover:text-white">+1 800 123 4567</a>
+                <a href="tel:+18001234567" className="hover:text-white">+1 850 592 4254</a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-sky-300" />
-                <a href="mailto:info@arcticair.com" className="hover:text-white">info@arcticair.com</a>
+                <a href="mailto:info@arcticair.com" className="hover:text-white">collabcircle21@gmail.com</a>
               </li>
             </ul>
           </motion.div>

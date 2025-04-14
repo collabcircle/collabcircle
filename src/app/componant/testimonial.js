@@ -6,19 +6,28 @@ import { FaPlay, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
-import one from '../images/one.jpeg'; // Replace with actual image URL
+
+import one from '../images/thumbnail/one.jpg'
+import two from '../images/thumbnail/two.jpg'
+import three from '../images/thumbnail/three.jpg'
 
 const testimonials = [
   {
-    name: 'John Doe',
+   
     videoUrl: '/videos/video1.mp4',
     thumbnail: one,
     description: 'Superb service! Cooling like never before. Highly recommended!',
   },
   {
-    name: 'Jane Smith',
+   
     videoUrl: '/videos/video2.mp4',
-    thumbnail:one,
+    thumbnail:two,
+    description: 'Fast AC installation, excellent customer support, and great value!',
+  },
+  {
+    
+    videoUrl: '/videos/video2.mp4',
+    thumbnail:three,
     description: 'Fast AC installation, excellent customer support, and great value!',
   },
 ];
@@ -83,7 +92,7 @@ const Testimonial = () => {
               <div className="relative pb-[56.25%]">
                 <Image
                   src={testimonial.thumbnail}
-                  alt={testimonial.name}
+                  alt="not found"
                   width={500}
                   height={500}
                   className="absolute w-full h-full object-cover top-0 left-0"
@@ -97,7 +106,7 @@ const Testimonial = () => {
               </div>
 
               <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-blue-700">{testimonial.name}</h3>
+               
                 <p className="text-gray-600 text-sm mt-2">{testimonial.description}</p>
               </div>
 

@@ -1,13 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import one from '.././images/one.jpeg'
+
+import one from '.././images/imageGallary/one.png'
+import two from '.././images/imageGallary/two.png'
+import three from '.././images/imageGallary/three.png'
+import four from '.././images/imageGallary/four.png'
+import five from '.././images/imageGallary/five.png'
+import six from '.././images/imageGallary/six.jpg'
+
 const images = [
-  { src: one, label: "Glasses" },
-  { src: one, label: "Men" },
-  { src: one, label: "Winter collection" },
-  { src: one, label: "Shoe" },
-  { src: one, label: "Perfumes" },
-  { src: one, label: "Women" },
+  { src: one },
+  { src: two },
+  { src: three },
+  { src: four },
+  { src: five },
+  { src: six},
 ];
 
 function ImageGallery() {
@@ -29,14 +36,12 @@ function ImageGallery() {
             >
               <Image
                 src={item.src}
-                alt={item.label}
+                alt="Gallery Image"
                 width={500}
                 height={500}
                 className="w-full h-auto object-cover"
               />
-              <p className="text-base font-medium text-center text-white bg-gradient-to-r from-black/40 to-black/20 py-2">
-                {item.label}
-              </p>
+              
             </div>
           ))}
         </div>

@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
 import Image from "next/image";
-import one from '../../images/one.jpeg'
+import one from '../../images/aboutimages/abutlast.jpg'
 const About2 = () => {
   useEffect(() => {
     const animatedItems = document.querySelectorAll(".animate-on-scroll");
@@ -63,7 +63,7 @@ const About2 = () => {
           <Image width={500} height={500} className="sm:hidden block w-full" src={one} alt="Team working" />
         </div>
 
-        <div className="lg:mt-16 sm:mt-12 mt-16 flex lg:flex-row justify-between flex-col lg:gap-8 gap-12">
+        {/* <div className="lg:mt-16 sm:mt-12 mt-16 flex lg:flex-row justify-between flex-col lg:gap-8 gap-12">
           <div className="w-full xl:w-5/12 lg:w-6/12 animate-on-scroll from-left">
             <h2 className="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-blue-900">Who We Are</h2>
             <p className="font-normal text-base leading-6 text-gray-800 mt-4">
@@ -83,7 +83,7 @@ const About2 = () => {
             <Image width={500} height={500} className="lg:hidden sm:block hidden w-full h-3/4" src={one} alt="AC team" />
             <Image width={500} height={500} className="sm:hidden block w-full" src={one} alt="AC team" />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -2,7 +2,8 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-
+import Image from "next/image";
+import logo from '../images/logo.jpg'
 import {
   FiMail, FiPhone, FiInstagram, FiFacebook,
   FiMessageCircle, FiX, FiMenu
@@ -42,11 +43,11 @@ export default function Header() {
           >
             <Link href="mailto:info@arcticair.com" className="flex items-center text-sm hover:text-sky-200">
               <FiMail className="h-4 w-4 mr-1" />
-              <span className="hidden sm:inline">info@arcticair.com</span>
+              <span className="hidden sm:inline">collabcircle21@gmail.com</span>
             </Link>
             <Link href="tel:+18001234567" className="flex items-center text-sm hover:text-sky-200">
               <FiPhone className="h-4 w-4 mr-1" />
-              <span className="hidden sm:inline">+1 800 123 4567</span>
+              <span className="hidden sm:inline">+1 850 592 4254</span>
             </Link>
           </motion.div>
           <motion.div
@@ -54,9 +55,9 @@ export default function Header() {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-          ><Link href="https://instagram.com/your_username" target="_blank" className="hover:text-sky-200"><FiInstagram className="h-4 w-4" /></Link>
-          <Link href="https://facebook.com/your.profile.id" target="_blank" className="hover:text-sky-200"><FiFacebook className="h-4 w-4" /></Link>
-          <Link href="https://wa.me/919876543210" target="_blank" className="hover:text-sky-200"><FaWhatsapp className="h-4 w-4" /></Link>
+          ><Link href="https://instagram.com" target="_blank" className="hover:text-sky-200"><FiInstagram className="h-4 w-4" /></Link>
+          <Link href="https://facebook.com" target="_blank" className="hover:text-sky-200"><FiFacebook className="h-4 w-4" /></Link>
+          <Link href="https://wa.me/918505924254" target="_blank" className="hover:text-sky-200"><FaWhatsapp className="h-4 w-4" /></Link>
           
           </motion.div>
         </div>
@@ -71,22 +72,20 @@ export default function Header() {
         className={`${isScrolled ? "bg-white shadow-md" : "bg-white/90"} backdrop-blur-md py-5 md:py-6 px-4 sm:px-6 lg:px-8 sticky top-0 z-50 transition-all duration-300`}
       >
         <div className="container mx-auto flex justify-between items-center relative">
-          <motion.div
-            initial={{ x: -60, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <Link href="/" className="text-2xl font-bold text-slate-900 flex items-center">
-              <motion.div
-                initial={{ rotate: 0 }}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-              >
-                <FaSnowflake className="h-7 w-7 mr-2 text-sky-600" />
-              </motion.div>
-              <span className="text-sky-600">Arctic</span>Air
-            </Link>
-          </motion.div>
+      
+  
+    
+      {/* Replace with your logo image */}
+      <Image
+         width={100}
+         height={100}
+        src={logo.src} // Update with your logo path
+        alt="Company Logo"
+        className="h-12 w-12 object-contain"  // Adjust size as needed
+      />
+   
+ 
+
 
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <FiX /> : <FiMenu />}
@@ -99,7 +98,7 @@ export default function Header() {
             transition={{ duration: 1 }}
           >
             
-            { /* this is for desktop */['Home', 'About' ,'contact'].map((item) => {
+            { /* this is for desktop */['Home', 'About'].map((item) => {
               const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
               return (
                 <Link

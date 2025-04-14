@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelopeOpenText } from 'react-icons/fa';
 import Image from 'next/image';
-import one from '../../images/one.jpeg' // Replace with actual image URL
+import one from '../../images/aboutimages/contactform.jpg' // Replace with actual image URL
 const ContactUs = () => {
   const [loading, setLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false); // Track if the email was sent successfully
@@ -119,8 +119,8 @@ const ContactUs = () => {
             width={500}
             height={500}
             style={{
-              width: '80%',
-              height: 'auto',
+              width: '90%',
+              height: '85%',
               animation: 'bounce 2s ease-in-out infinite',
             }}
           />

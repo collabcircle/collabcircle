@@ -31,7 +31,7 @@ export async function POST(req) {
     // Email options
     const mailOptions = {
         from: "websiteemailxx@gmail.com", // sender's email (from request body)
-        to: "suhailx187@gmail.com", // receiver's email
+        to: "collabcircle21@gmail.com", // receiver's email
         subject: "Ac Service Enquiry", // email subject
         html: `
         <h1>Regarding AC Service or Maintanance</h1>

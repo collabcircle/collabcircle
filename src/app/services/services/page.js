@@ -8,6 +8,25 @@ import { useState } from "react";
 import Image from 'next/image';
 import one from '../../images/one.jpeg'; // Replace with actual image URL
 // Replace icons with image URLs in the services section
+
+import acjat from  '../../images/service/jatac.jpg'
+
+import  colling from  '../../images/service/accooling.jpg'
+
+import  acmotors from  '../../images/service/acmotors.jpg'
+
+import compressor from  '../../images/service/compressor.jpg'
+
+import frezegas from  '../../images/service/frezegas.jpg'
+
+import frezecooling from  '../../images/service/frezecooling.jpg'
+
+
+import frezeMaintane from  '../../images/service/frezeMaintane.jpg'
+
+
+import main from  '../../images/service/main.jpg'
+
 const otherServices = [
   {
     title: "Jat AC Services",
@@ -17,37 +36,37 @@ const otherServices = [
   },
   {
     title: "AC Cooling Issue Service",
-    image: one, // Replace with actual image
+    image: acjat, // Replace with actual image
     description: "We fix weak cooling issues quickly and ensure your AC delivers peak performance again.",
     includes: ["Coolant check", "Filter cleaning", "Thermostat calibration"]
   },
   {
     title: "Motors Maintenance Service",
-    image: one, // Replace with actual image
+    image: acmotors, // Replace with actual image
     description: "Smooth motor operation with timely checks and lubrication to avoid breakdowns.",
     includes: ["Motor lubrication", "Fan motor testing", "Noise and heat check"]
   },
   {
     title: "Compressor Maintenance",
-    image: one, // Replace with actual image
+    image: compressor, // Replace with actual image
     description: "Keep your AC’s heart healthy with our expert compressor care and servicing.",
     includes: ["Compressor health check", "Refrigerant pressure test", "Noise inspection"]
   },
   {
     title: "Fridge Gas Refilling",
-    image: one, // Replace with actual image
+    image: frezegas, // Replace with actual image
     description: "Refilling refrigerant gas to restore effective cooling in all types of refrigerators.",
     includes: ["Leak test", "Refill with accurate quantity", "Cooling performance check"]
   },
   {
     title: "Refrigerator Cooling Issue Fix",
-    image: one, // Replace with actual image
+    image: frezecooling, // Replace with actual image
     description: "Repair weak cooling issues in refrigerators for long-lasting freshness and performance.",
     includes: ["Thermostat check", "Evaporator coil inspection", "Fan function test"]
   },
   {
     title: "Fridge Parts Maintenance",
-    image: one, // Replace with actual image
+    image: frezeMaintane, // Replace with actual image
     description: "We repair and replace faulty fridge parts like fans, coils, and compressors with quality spares.",
     includes: ["Component diagnosis", "Genuine part replacement", "Post-repair testing"]
   }
@@ -122,7 +141,7 @@ const Index = () => {
           Our expert technicians solve a variety of AC problems, including cooling issues, gas leaks, and unusual noises. We use advanced tools and genuine parts to ensure reliable, long-lasting repairs. Your AC’s performance and comfort are restored with precision, speed, and complete care.         </p>
         </div>
         <div className="w-full md:w-1/2">
-          <Image src={one} height={500} width={500} alt="Repair AC" className="rounded-xl shadow-xl" />
+          <Image src={main} height={500} width={500} alt="Repair AC" className="rounded-xl shadow-xl" />
         </div>
       </section>
 
@@ -137,7 +156,7 @@ const Index = () => {
               key={index}
               className="bg-gradient-to-t from-blue-50 to-blue-100 p-6 rounded-2xl shadow-md text-center space-y-4 transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out"
             >
-              <Image src={service.image} width={500} height={500} alt={service.title} className="mx-auto w-24 h-24 object-contain" />
+              <Image src={service.image} width={500} height={500} alt={service.title} className="mx-auto w-60 h-60 object-contain" />
               <h3 className="text-xl font-semibold text-blue-700">{service.title}</h3>
               <p className="text-gray-600 text-smc text-gray-800">{service.description}</p>
             </div>

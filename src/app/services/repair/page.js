@@ -5,42 +5,50 @@ import Footer from "../../componant/footer";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import Image from 'next/image';
-import one from '../../images/one.jpeg'; // Replace with actual image URL
+import one from '../../images/homebanner/three.jpg'; // Replace with actual image URL
 // Replace icons with image URLs in the services section
+
+import acpower from '../../images/repair/acpower.jpg'
+import noise from '../../images/repair/noise.jpg'
+import gasleak from '../../images/repair/leak.jpg'
+import waterleak from '../../images/repair/waterleak.jpeg'
+import partrepair from '../../images/repair/parthrepair.jpg'
+import partreplace from '../../images/repair/replaceparts.jpg'
+
 const repairServices = [
   {
     title: "AC Power Issue Repair",
-    image: one, // Replace with actual image
+    image: acpower, // Replace with actual image
     description: "Expert repair for sudden AC power failures, non-starting units, or inconsistent performance issues.",
     includes: ["Power circuit inspection", "Fuse replacement", "Thermal overload check"]
   },
   {
     title: "AC Noise Issue Repair",
-    image: one, // Replace with actual image
+    image: noise, // Replace with actual image
     description: "We resolve rattling, buzzing, or humming sounds to restore peaceful AC operation without disturbance.",
     includes: ["Fan and motor inspection", "Loose part tightening", "Vibration reduction"]
   },
   {
     title: "Gas Leakage Repair & Refilling",
-    image: one, // Replace with actual image
+    image: gasleak, // Replace with actual image
     description: "Fix and refill AC refrigerant with utmost safety and precision to ensure efficient cooling.",
     includes: ["Leakage detection", "Safe refrigerant refilling", "Compressor check"]
   },
   {
     title: "AC Water Leakage Repair",
-    image: one, // Replace with actual image
+    image: waterleak, // Replace with actual image
     description: "Complete drainage system check and repair to stop indoor unit water leakage issues effectively.",
     includes: ["Drain pipe cleaning", "Clog removal", "Insulation inspection"]
   },
   {
     title: "AC Parts Repair",
-    image: one, // Replace with actual image
+    image: partrepair, // Replace with actual image
     description: "Repair or replace faulty components like capacitors, fans, compressors, and sensors with genuine parts.",
     includes: ["Component diagnosis", "Part replacement", "Functionality testing"]
   },
   {
     title: "Cleaning & Replacing Parts",
-    image: one, // Replace with actual image
+    image: partreplace, // Replace with actual image
     description: "Deep cleaning of filters and components for improved efficiency, air quality, and unit lifespan.",
     includes: ["Filter cleaning", "Fan blade washing", "Dust removal"]
   }
@@ -120,7 +128,7 @@ const Repair = () => {
               key={index}
               className="bg-gradient-to-t from-blue-50 to-blue-100 p-6 rounded-2xl shadow-md text-center space-y-4 transform hover:scale-105 hover:shadow-xl transition duration-300 ease-in-out"
             >
-              <Image src={service.image} width={500} height={500} alt={service.title} className="mx-auto w-24 h-24 object-contain" />
+              <Image src={service.image} width={500} height={500} alt={service.title} className="mx-auto w-full h-auto object-contain" />
               <h3 className="text-xl font-semibold text-blue-700">{service.title}</h3>
               <p className="text-gray-600 text-smc text-gray-800">{service.description}</p>
             </div>

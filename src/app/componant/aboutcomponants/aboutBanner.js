@@ -3,8 +3,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import  Image from 'next/image';
-import one from '../../images/one.jpeg'; // Replace with actual image URL
+
+ import one from  '../../images/aboutimages/who.jpg';
+ import aboutus from '../../images/aboutimages/aboutus.jpg'
+
 const AboutBanner = () => {
+
+
   return (
     <section className="min-h-screen w-full bg-gradient-to-r from-white via-blue-100 to-blue-200 relative overflow-hidden p-4">
       {/* Top Typing Effect Heading */}
@@ -29,7 +34,7 @@ const AboutBanner = () => {
       {/* Background Image with Description */}
       <div className="mt-10 relative h-[50vh] md:h-[80vh] w-full">
         <Image
-          src={one}
+          src={aboutus}
           alt="About Background"
           width={500}
           height={500}

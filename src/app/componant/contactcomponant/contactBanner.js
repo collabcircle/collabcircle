@@ -2,19 +2,22 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import contatbanner from '../../images/aboutimages/banner.jpg'
 
 const ContactBanner = () => {
   return (
     <section
-      className="w-full relative flex items-center justify-center overflow-hidden"
-      style={{
-        height: '80vh',
-        backgroundImage: `url('https://cdn.pixabay.com/photo/2021/09/08/07/20/air-conditioner-6605973_640.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
+  className="w-full relative flex items-center justify-center overflow-hidden"
+  style={{
+    height: '80vh',
+    backgroundImage: `url("${contatbanner.src}")`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+>
+
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-blue bg-opacity-40 z-10"></div>
 
@@ -50,14 +53,14 @@ const ContactBanner = () => {
           />
         </motion.h1>
 
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
-          className="text-white text-sm sm:text-lg md:text-xl font-medium max-w-2xl mx-auto"
+          className="text-blue-800 text-sm sm:text-lg md:text-xl font-medium max-w-2xl mx-auto"
         >
           Whether it’s an inquiry, feedback, or assistance you need — we’re always ready to listen. Drop us a message and we’ll get back to you quickly!
-        </motion.p>
+        </motion.p> */}
       </div>
 
       {/* Responsive Height */}

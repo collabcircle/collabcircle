@@ -4,11 +4,13 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-import one from "../images/one.jpeg";
-import two from "../images/two.jpg";
-import three from "../images/three.jpeg";
+import one from '../images/homebanner/one.jpg'
+import two from '../images/homebanner/two.jpg'
+import three from '../images/homebanner/three.jpg'
+import four from '../images/homebanner/four.jpg'
+import five from '../images/homebanner/five.jpg'
 
-const images = [one, two, three];
+const images = [one, two, three,four,five];
 
 export default function FullScreenCarousel() {
   const [index, setIndex] = useState(0);

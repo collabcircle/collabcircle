@@ -7,7 +7,13 @@ import { useState } from "react";
 import Header from '../../componant/header';
 import Footer from "../../componant/footer";
 import Image from "next/image";
-import one from '../../images/one.jpeg'; // Replace with actual image URL
+
+import ins from '../../images/install/ins.jpg'
+
+import wininstall from '../../images/install/windowins.jpg'
+import splitinstall from '../../images/install/splitins.jpg'
+import winuninstall from '../../images/install/winuninstall.jpg'
+import splituninstall from '../../images/install/splitunins.jpg'
 
 const AcInstallationPage = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -76,7 +82,9 @@ const AcInstallationPage = () => {
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          src="https://i.ibb.co/7Rn3yNT/airconditioner.png"
+          src={ins.src}
+          width={500}
+          height={500}
           alt="AC Installation"
           className="w-full lg:w-1/2"
         />
@@ -90,22 +98,22 @@ const AcInstallationPage = () => {
             { 
               title: "Window AC Installation", 
               desc: "Wall mount, insulation, electrical setup & performance testing.", 
-              img: one
+              img: wininstall
             },
             { 
               title: "Split AC Installation", 
               desc: "Indoor/outdoor setup, copper piping, and complete system connection.", 
-              img: one
+              img: splitinstall
             },
             { 
               title: "Window AC Uninstallation", 
               desc: "Safe removal, power disconnect, and hardware disassembly.", 
-              img: one
+              img: winuninstall
             },
             { 
               title: "Split AC Uninstallation", 
               desc: "Professional disconnection & equipment safety handling.", 
-              img: one
+              img: splituninstall
             },
           ].map((item, index) => (
             <motion.div
